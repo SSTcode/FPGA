@@ -1,0 +1,20 @@
+module XO3L_SK_blink (  
+		input CLK_20M,
+		input SD_DATA_i,
+		output SD_CLK,
+		output SD_CLK_cpu,
+		output SUPPLY_CLK,
+		output GPIO72,
+		output SD_DATA_o
+        );
+
+
+
+assign SD_CLK = CLK_20M;
+assign SD_CLK_cpu = CLK_20M;
+assign SUPPLY_CLK = CLK_20M;
+assign GPIO72 = 1'b1;
+assign SD_DATA_o = SD_DATA_i;
+
+endmodule
+
